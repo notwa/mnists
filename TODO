@@ -1,0 +1,21 @@
+TODO
+
+ *  abide to PEP 8
+
+ *  finish writing README
+
+ *  finish npz functionality
+
+ *  document prepare() function
+
+ *  support python 3.5
+
+ *  adjust dates created/modified on server-hosted files to something sensible
+
+ *  basic tests (including PEP 8)
+
+ *  submit to pypi
+
+ *  document everything
+
+ *  test everything
