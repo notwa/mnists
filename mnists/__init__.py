@@ -194,7 +194,6 @@ def prepare(dataset="mnist", return_floats=True, return_onehot=True,
     make_directories()
 
     existing = [os.path.isfile(construct_path(name)) for name in names]
-
     npz_existing, gz_existing = existing[0], existing[1:]
 
     for name in images_and_labels:
