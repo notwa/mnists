@@ -5,7 +5,7 @@ downloads and prepares various mnist-compatible datasets.
 files are downloaded to `~/.mnist`
 and checked for integrity by SHA-256 hashes.
 
-**dependencies:** numpy
+**dependencies:** python 3.6 or later, numpy
 
 **install:** `pip install --upgrade --upgrade-strategy only-if-needed https://github.com/notwa/mnists/tarball/master#egg=mnists`
 
