@@ -29,12 +29,32 @@ dataset = "emnist_balanced"
 train_images, train_labels, test_images, test_labels = mnists.prepare(dataset)
 ```
 
-the default images shape is (n, 1, 28, 28).
-pass `flatten=True` to `mnists.prepare` to get (n, 784).
+the default images shape is (n, 1, 28, 28) and scaled to the range [0, 1].
+labels are output in [one-hot encoding.][onehot]
+
+[onehot]: //machinelearningmastery.com/why-one-hot-encode-data-in-machine-learning/
+
+### `prepare` arguments
+
+pass `flatten=True` to get a flattened (n, 784) image shape.
+
+pass `return_floats=False` to get the raw [0, 255] integer range of images.
+
+pass `return_onehot=False` to get the raw [0, M-1] integer encoding of labels.
+
+### why the extra dimension?
+
+you will notice that, by default,
+there is a single-dimensional entry in the shape of images:
+(n, **1,** 28, 28).
+this exists to obtain compatibility with programs that
+expect a number of color channels in that place.
+since mnist-like datasets are (as of writing) all grayscale,
+there is only one color channel, and thus the size of this dimension is 1.
 
 ## datasets
 
-in alphabetical order, using default `mnists.prepare` parameters:
+in alphabetical order, using default `mnists.prepare` arguments:
 
 [emnist]: //www.nist.gov/itl/iad/image-group/emnist-dataset
 [fashion-mnist]: //github.com/zalandoresearch/fashion-mnist
