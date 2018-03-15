@@ -38,20 +38,57 @@ in alphabetical order:
 
 ### [emnist][emnist]
 
-* `emnist_balanced`
-* `emnist_byclass`
-* `emnist_bymerge`
-* `emnist_digits`
-* `emnist_letters`
-* `emnist_mnist`
+ *  `emnist_balanced`  
+    train images shape: (112800, 1, 28, 28)  
+    train labels shape: (112800, 47)  
+    test images shape: (18800, 1, 28, 28)  
+    test labels shape: (18800, 47)  
+
+ *  `emnist_byclass`  
+    train images shape: (697932, 1, 28, 28)  
+    train labels shape: (697932, 62)  
+    test images shape: (116323, 1, 28, 28)  
+    test labels shape: (116323, 62)  
+
+ *  `emnist_bymerge`  
+    train images shape: (697932, 1, 28, 28)  
+    train labels shape: (697932, 47)  
+    test images shape: (116323, 1, 28, 28)  
+    test labels shape: (116323, 47)  
+
+ *  `emnist_digits`  
+    train images shape: (240000, 1, 28, 28)  
+    train labels shape: (240000, 10)  
+    test images shape: (40000, 1, 28, 28)  
+    test labels shape: (40000, 10)  
+
+ *  `emnist_letters`  
+    train images shape: (124800, 1, 28, 28)  
+    train labels shape: (124800, 26)  
+    test images shape: (20800, 1, 28, 28)  
+    test labels shape: (20800, 26)  
+
+ *  `emnist_mnist`  
+    train images shape: (60000, 1, 28, 28)  
+    train labels shape: (60000, 10)  
+    test images shape: (10000, 1, 28, 28)  
+    test labels shape: (10000, 10)  
 
 ### [fashion-mnist][fashion-mnist]
 
-* `fashion_mnist`
+ *  `fashion_mnist`  
+    train images shape: (60000, 1, 28, 28)  
+    train labels shape: (60000, 10)  
+    test images shape: (10000, 1, 28, 28)  
+    test labels shape: (10000, 10)  
 
 ### [mnist][mnist]
 
-* `mnist`
+ *  `mnist`  
+    train images shape: (60000, 1, 28, 28)  
+    train labels shape: (60000, 10)  
+    test images shape: (10000, 1, 28, 28)  
+    test labels shape: (10000, 10)  
 
 [emnist]: //www.nist.gov/itl/iad/image-group/emnist-dataset
 [fashion-mnist]: //github.com/zalandoresearch/fashion-mnist
