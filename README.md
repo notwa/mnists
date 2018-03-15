@@ -11,11 +11,11 @@ python 3.6 (or later), numpy.
 
 ### install
 
-`pip install --upgrade --upgrade-strategy only-if-needed 'https://github.com/notwa/mnists/tarball/master#egg=mnists'`
+`pip install --upgrade 'https://github.com/notwa/mnists/tarball/master#egg=mnists'`
 
-I've added `--upgrade-strategy` to the command-line
-so you don't accidentally "upgrade" numpy to
-a version not compiled specifically for your system.
+I recommend adding `--upgrade-strategy only-if-needed` to the command
+so that you don't accidentally "upgrade" numpy to
+a version not compiled specifically for your environment.
 This can happen when using e.g. [Anaconda.][anaconda]
 
 [anaconda]: //www.anaconda.com/
