@@ -42,14 +42,14 @@ def make_emnist_meta(npz, name):
 
 
 metadata = dict(
-    emnist_balanced = make_emnist_meta("emnist_balanced.npz", "emnist-balanced"),
-    emnist_byclass = make_emnist_meta("emnist_byclass.npz", "emnist-byclass"),
-    emnist_bymerge = make_emnist_meta("emnist_bymerge.npz", "emnist-bymerge"),
-    emnist_digits = make_emnist_meta("emnist_digits.npz", "emnist-digits"),
-    emnist_letters = make_emnist_meta("emnist_letters.npz", "emnist-letters"),
-    emnist_mnist = make_emnist_meta("emnist_mnist.npz", "emnist-mnist"),
-    fashion_mnist = make_meta("fashion_mnist.npz", prefix="fashion-mnist"),
-    mnist = make_meta("mnist.npz", prefix="mnist"),
+    emnist_balanced=make_emnist_meta("emnist_balanced.npz", "emnist-balanced"),
+    emnist_byclass=make_emnist_meta("emnist_byclass.npz", "emnist-byclass"),
+    emnist_bymerge=make_emnist_meta("emnist_bymerge.npz", "emnist-bymerge"),
+    emnist_digits=make_emnist_meta("emnist_digits.npz", "emnist-digits"),
+    emnist_letters=make_emnist_meta("emnist_letters.npz", "emnist-letters"),
+    emnist_mnist=make_emnist_meta("emnist_mnist.npz", "emnist-mnist"),
+    fashion_mnist=make_meta("fashion_mnist.npz", prefix="fashion-mnist"),
+    mnist=make_meta("mnist.npz", prefix="mnist"),
 )
 
 
@@ -77,7 +77,7 @@ def download(name):
         url = webhost + url_name
         try:
             urlretrieve(url, path)
-        except:
+        except Exception:
             lament(f"Failed to download {url} to {path}")
             raise
     return already_exists
@@ -180,8 +180,8 @@ def prepare(dataset="mnist", return_floats=True, return_onehot=True,
 
     # correct the orientation of emnist images.
     if prefix == "emnist":
-        train_images_data = train_images_data.transpose(0,1,3,2)
-        test_images_data = test_images_data.transpose(0,1,3,2)
+        train_images_data = train_images_data.transpose(0, 1, 3, 2)
+        test_images_data = test_images_data.transpose(0, 1, 3, 2)
 
     if return_floats:  # TODO: better name.
         train_images_data = train_images_data.astype(np.float32) / 255
