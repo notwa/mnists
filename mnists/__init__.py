@@ -29,7 +29,7 @@ output_directory = os.path.join(home, ".mnist")
 webhost = "https://eaguru.guru/mnist/"
 
 
-def make_meta(npz, train_part="train", test_part="t10k", prefix=""):
+def _make_meta(npz, train_part="train", test_part="t10k", prefix=""):
     images_suffix = "-images-idx3-ubyte.gz"
     labels_suffix = "-labels-idx1-ubyte.gz"
     return (prefix, npz,
@@ -39,19 +39,19 @@ def make_meta(npz, train_part="train", test_part="t10k", prefix=""):
             test_part + labels_suffix)
 
 
-def make_emnist_meta(npz, name):
-    return make_meta(npz, name + "-train", name + "-test", prefix="emnist")
+def _emnist_meta(npz, name):
+    return _make_meta(npz, name + "-train", name + "-test", prefix="emnist")
 
 
 metadata = dict(
-    emnist_balanced=make_emnist_meta("emnist_balanced.npz", "emnist-balanced"),
-    emnist_byclass=make_emnist_meta("emnist_byclass.npz", "emnist-byclass"),
-    emnist_bymerge=make_emnist_meta("emnist_bymerge.npz", "emnist-bymerge"),
-    emnist_digits=make_emnist_meta("emnist_digits.npz", "emnist-digits"),
-    emnist_letters=make_emnist_meta("emnist_letters.npz", "emnist-letters"),
-    emnist_mnist=make_emnist_meta("emnist_mnist.npz", "emnist-mnist"),
-    fashion_mnist=make_meta("fashion_mnist.npz", prefix="fashion-mnist"),
-    mnist=make_meta("mnist.npz", prefix="mnist"),
+    emnist_balanced=_emnist_meta("emnist_balanced.npz", "emnist-balanced"),
+    emnist_byclass=_emnist_meta("emnist_byclass.npz", "emnist-byclass"),
+    emnist_bymerge=_emnist_meta("emnist_bymerge.npz", "emnist-bymerge"),
+    emnist_digits=_emnist_meta("emnist_digits.npz", "emnist-digits"),
+    emnist_letters=_emnist_meta("emnist_letters.npz", "emnist-letters"),
+    emnist_mnist=_emnist_meta("emnist_mnist.npz", "emnist-mnist"),
+    fashion_mnist=_make_meta("fashion_mnist.npz", prefix="fashion-mnist"),
+    mnist=_make_meta("mnist.npz", prefix="mnist"),
 )
 
 
