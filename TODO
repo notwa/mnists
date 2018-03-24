@@ -2,8 +2,6 @@ TODO
 
  *  finish writing README
 
- *  finish npz functionality
-
  *  document prepare() function
 
  *  support python 3.5
@@ -17,3 +15,5 @@ TODO
  *  document everything
 
  *  test everything
+
+ *  consider npz functionality if it reduces preprocessing time
