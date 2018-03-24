@@ -5,9 +5,9 @@ class IntegrityError(Exception):
         self.computed_hash = computed_hash
 
     def __str__(self):
-        return f"""Failed to validate dataset: {name}
+        return """Failed to validate dataset: {self.file}
 Hash mismatch: {self.computed_hash} should be {self.expected_hash}
-Please check your local file for tampering or corruption."""
+Please check your local file for tampering or corruption.""".format(self=self)
 
 
 class UnknownDatasetError(Exception):
@@ -15,4 +15,4 @@ class UnknownDatasetError(Exception):
         self.dataset = dataset
 
     def __str__(self):
-        return f"Unknown mnist-like dataset: {dataset}"
+        return "Unknown mnist-like dataset: {self.dataset}".format(self=self)

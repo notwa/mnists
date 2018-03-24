@@ -31,7 +31,7 @@ for name in metadata.keys():
     # print out the shape table for use in the README.
     data = prepare(name)
     prefix = metadata[name][0]
-    row_data = [f"[{prefix}][]"]
+    row_data = ["[{}][]".format(prefix)]
     row_data += [name.replace("_", "\\_")]
     row_data += [str(array.shape) for array in data]
     print(row.format(*row_data))
@@ -39,4 +39,4 @@ for name in metadata.keys():
 print()
 
 for anchor, url in urls.items():
-    print(f"[{anchor}]: {url}")
+    print("[{}]: {}".format(anchor, url))

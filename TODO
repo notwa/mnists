@@ -4,8 +4,6 @@
 
  *  document prepare() function
 
- *  support python 3.5
-
  *  adjust dates created/modified on server-hosted files to something sensible
 
  *  host files on a more reliable service
@@ -13,6 +11,10 @@
  *  add support for mirrors
 
  *  basic tests (including running pycodestyle)
+
+ *  --fix (delete corrupt files) and --debug (logging.DEBUG) __main__ arguments
+
+ *  try python 3.2 with an old version of numpy (don't care if it doesn't work)
 
 ### release version 1.0
 

@@ -90,14 +90,15 @@ def validate(name):
     if name not in hashes.keys():
         raise UnknownDatasetError(name)
 
-    with open(construct_path(name), "rb") as f:
+    path = construct_path(name)
+    with open(path, "rb") as f:
         data = f.read()
 
     known_hash = hashes[name]
     hash = hashlib.sha256(data).hexdigest()
 
     if hash != known_hash:
-        raise IntegrityError(file, known_hash, hash)
+        raise IntegrityError(path, known_hash, hash)
 
 
 def onehot(ind):

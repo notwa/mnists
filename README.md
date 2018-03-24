@@ -7,7 +7,7 @@ and checked for integrity by SHA-256 hashes.
 
 ### dependencies
 
-python 3.6 (or later), numpy.
+python 3.5 (or later), numpy.
 
 ### install
 
