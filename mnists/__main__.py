@@ -1,5 +1,10 @@
-from . import metadata, prepare
+import logging
 
+from . import metadata, prepare, logger
+
+
+logging.basicConfig()
+logger.setLevel(logging.DEBUG)
 
 headers = ("subdirectory",
            "dataset",
