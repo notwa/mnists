@@ -1,4 +1,4 @@
-TODO
+## TODO
 
  *  finish writing README
 
@@ -8,7 +8,13 @@ TODO
 
  *  adjust dates created/modified on server-hosted files to something sensible
 
- *  basic tests (including PEP 8)
+ *  host files on a more reliable service
+
+ *  add support for mirrors
+
+ *  basic tests (including running pycodestyle)
+
+### release version 1.0
 
  *  submit to pypi
 
