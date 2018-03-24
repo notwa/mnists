@@ -3,6 +3,8 @@
 # Copyright (C) 2018 Connor Olding
 # Distributed under terms of the MIT license.
 
+__version__ = "0.2.1"
+
 # NOTE: npz functionality is incomplete.
 
 import array
