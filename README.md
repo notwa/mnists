@@ -56,17 +56,17 @@ there is only one color channel, and thus the size of this dimension is 1.
 
 in alphabetical order, using default `mnists.prepare` arguments:
 
+| subdirectory         | dataset              | train images shape   | train labels shape   | test images shape    | test labels shape    |
+| :---                 | :---                 | ---:                 | ---:                 | ---:                 | ---:                 |
+| [emnist][]           | emnist\_balanced     | (112800, 1, 28, 28)  | (112800, 47)         | (18800, 1, 28, 28)   | (18800, 47)          |
+| [emnist][]           | emnist\_byclass      | (697932, 1, 28, 28)  | (697932, 62)         | (116323, 1, 28, 28)  | (116323, 62)         |
+| [emnist][]           | emnist\_bymerge      | (697932, 1, 28, 28)  | (697932, 47)         | (116323, 1, 28, 28)  | (116323, 47)         |
+| [emnist][]           | emnist\_digits       | (240000, 1, 28, 28)  | (240000, 10)         | (40000, 1, 28, 28)   | (40000, 10)          |
+| [emnist][]           | emnist\_letters      | (124800, 1, 28, 28)  | (124800, 26)         | (20800, 1, 28, 28)   | (20800, 26)          |
+| [emnist][]           | emnist\_mnist        | (60000, 1, 28, 28)   | (60000, 10)          | (10000, 1, 28, 28)   | (10000, 10)          |
+| [fashion-mnist][]    | fashion\_mnist       | (60000, 1, 28, 28)   | (60000, 10)          | (10000, 1, 28, 28)   | (10000, 10)          |
+| [mnist][]            | mnist                | (60000, 1, 28, 28)   | (60000, 10)          | (10000, 1, 28, 28)   | (10000, 10)          |
+
 [emnist]: //www.nist.gov/itl/iad/image-group/emnist-dataset
 [fashion-mnist]: //github.com/zalandoresearch/fashion-mnist
 [mnist]: http://yann.lecun.com/exdb/mnist/
-
-| dataset              | train images shape   | train labels shape   | test images shape    | test labels shape    |
-| :---                 | ---:                 | ---:                 | ---:                 | ---:                 |
-| emnist\_balanced     | (112800, 1, 28, 28)  | (112800, 47)         | (18800, 1, 28, 28)   | (18800, 47)          |
-| emnist\_byclass      | (697932, 1, 28, 28)  | (697932, 62)         | (116323, 1, 28, 28)  | (116323, 62)         |
-| emnist\_bymerge      | (697932, 1, 28, 28)  | (697932, 47)         | (116323, 1, 28, 28)  | (116323, 47)         |
-| emnist\_digits       | (240000, 1, 28, 28)  | (240000, 10)         | (40000, 1, 28, 28)   | (40000, 10)          |
-| emnist\_letters      | (124800, 1, 28, 28)  | (124800, 26)         | (20800, 1, 28, 28)   | (20800, 26)          |
-| emnist\_mnist        | (60000, 1, 28, 28)   | (60000, 10)          | (10000, 1, 28, 28)   | (10000, 10)          |
-| fashion\_mnist       | (60000, 1, 28, 28)   | (60000, 10)          | (10000, 1, 28, 28)   | (10000, 10)          |
-| mnist                | (60000, 1, 28, 28)   | (60000, 10)          | (10000, 1, 28, 28)   | (10000, 10)          |
