@@ -160,7 +160,7 @@ def prepare(dataset="mnist", return_floats=True, return_onehot=True,
     prefix, names = meta[0], meta[1:]
     names = [os.path.join(prefix, name) for name in names]
     train_images, train_labels, test_images, test_labels = names
-    images_and_labels = names[1:]
+    images_and_labels = names
 
     logger.debug("Filenames chosen for %s: %s, %s, %s, %s",
                  dataset, train_images, train_labels, test_images, test_labels)
