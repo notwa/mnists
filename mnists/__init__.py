@@ -3,7 +3,7 @@
 # Copyright (C) 2018 Connor Olding
 # Distributed under terms of the MIT license.
 
-__version__ = "0.3.2"
+__version__ = "0.4.0"
 
 import array
 import gzip
