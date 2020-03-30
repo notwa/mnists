@@ -66,7 +66,9 @@ in alphabetical order, using default `mnists.prepare` arguments:
 | [emnist][]           | emnist\_mnist        | (60000, 1, 28, 28)   | (60000, 10)          | (10000, 1, 28, 28)   | (10000, 10)          |
 | [fashion-mnist][]    | fashion\_mnist       | (60000, 1, 28, 28)   | (60000, 10)          | (10000, 1, 28, 28)   | (10000, 10)          |
 | [mnist][]            | mnist                | (60000, 1, 28, 28)   | (60000, 10)          | (10000, 1, 28, 28)   | (10000, 10)          |
+| [qmnist][]           | qmnist               | (60000, 1, 28, 28)   | (60000, 10)          | (60000, 1, 28, 28)   | (60000, 10)          |
 
 [emnist]: //www.nist.gov/itl/iad/image-group/emnist-dataset
 [fashion-mnist]: //github.com/zalandoresearch/fashion-mnist
 [mnist]: http://yann.lecun.com/exdb/mnist/
+[qmnist]: //github.com/facebookresearch/qmnist

@@ -63,4 +63,12 @@ hashes = {
         '440fcabf73cc546fa21475e81ea370265605f56be210a4024d2ca8f203523609',
     'mnist/train-labels-idx1-ubyte.gz':
         '3552534a0a558bbed6aed32b30c495cca23d567ec52cac8be1a0730e8010255c',
+    'qmnist/qmnist-test-images-idx3-ubyte.gz':
+        '43fc22bf7498b8fc98de98369d72f752d0deabc280a43a7bcc364ab19e57b375',
+    'qmnist/qmnist-test-labels-idx1-ubyte.gz':
+        '3f384004f51536c2a29f2ce4d36388ee6cb8fff45bc3ad0cc588a86f2cc76375',
+    'qmnist/qmnist-train-images-idx3-ubyte.gz':
+        '9e26a7bf1683614e065d7b76460ccd52807165b3f22561fb782bd9f38c52b51d',
+    'qmnist/qmnist-train-labels-idx1-ubyte.gz':
+        '3552534a0a558bbed6aed32b30c495cca23d567ec52cac8be1a0730e8010255c',
 }

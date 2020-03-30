@@ -21,6 +21,7 @@ urls = {
     "emnist": "//www.nist.gov/itl/iad/image-group/emnist-dataset",
     "fashion-mnist": "//github.com/zalandoresearch/fashion-mnist",
     "mnist": "http://yann.lecun.com/exdb/mnist/",
+    "qmnist": "//github.com/facebookresearch/qmnist",
 }
 
 print(row.format(*headers))
